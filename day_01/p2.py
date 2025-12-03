@@ -12,7 +12,7 @@ for move in moves:
     else:
         n_idx = idx + int(move[1:])
 
-    quot, idx = divmod(n_idx, 100)
+    quot, n_idx = divmod(n_idx, 100)
     count += abs(quot)
 
     if move[0] == "L" and n_idx == 0:
